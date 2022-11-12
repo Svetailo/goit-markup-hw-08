@@ -1,0 +1,19 @@
+.logo{display: block;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #000000;
+  }
+
+  .header__logo{padding-top: 24px;
+    padding-bottom: 25px;}
+
+    .logo__web{
+      color: var(--accent-text-color);} 
+      
+      .logo__cellar{color: var(--primary-background-color);}
+
+      .logo__cellar{
+        width: fit-content;
+        margin-bottom: 20px;}

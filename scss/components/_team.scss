@@ -1,0 +1,39 @@
+.team{background-color:var(--second-background-color)}
+
+.team__card{
+  width: calc(100%/4 - 30px/4*3);
+   border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-background-color);
+  box-shadow: var(--card-shadow);}
+
+  
+
+.team__list{display: flex;
+gap: 30px;}
+
+
+.title{
+  font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+margin-bottom: 50px;
+}
+   .team__subtitle {
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+}
+
+.team__text{
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  margin-top: 10px;
+  margin-bottom: 16px;
+color: var(--second-text-color);}
+
+  .team__text-container{
+    padding: 30px;
+  }
