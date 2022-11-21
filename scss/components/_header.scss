@@ -1,13 +1,24 @@
-.header__nav{display: flex;
-    gap: 93px;}
+.header__nav{
+  
+  // display: flex;
+  //   gap: 93px;
+    @media(max-width: 767px){display: flex;
+    
+    }
+  }
 
     .header{border-bottom: 1px solid #ECECEC;}
 
+    .header__burger-menu{
+      padding: 0;
+      @media (min-width: 768px){
+        display: none;
+      }
+    }
     .header__container{display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
-    
   }
     
 .header__contacts--link {display: block;
@@ -22,22 +33,11 @@ padding: 32px 0;
 &:hover,
 &:focus {color: var(--button-primary-background-color);
 fill: var(--accent-text-color);}
-
 }
-
-
-
-// .auth__link:hover,
-// .auth__link:focus {color: var(--button-primary-background-color);
-// fill: var(--accent-text-color);}
-
- 
-
 
     .header__contacts--icon{margin-right: 10px;
       transition: fill 250ms var(--cubic);
   }
-
 
     .header__contacts--link{display: flex;
     align-items: center;

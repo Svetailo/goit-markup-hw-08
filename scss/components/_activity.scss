@@ -1,3 +1,10 @@
+.activity{
+  @media(max-width: 1199px){display: none;}
+}
+
+
+
+
 .activity__list{display: flex;
     gap: 30px;}
     

@@ -7,7 +7,7 @@
   padding-top: 32px;
 padding-bottom: 32px;
 transition: color 250ms var(--cubic);
-
+@media(max-width:767px){}
 &:hover,
 &:focus {color: var(--button-primary-background-color);}
 }
@@ -48,9 +48,22 @@ transition: color 250ms var(--cubic);
 // background-color:var(--accent-text-color);
 // border-radius: 2px;
 // }
-.nav{display: flex;
+.nav{display: none;
+  
     gap: 50px;
-  align-items: center;}
+  align-items: center;
+@media (min-width: 768px){
+display: flex;
+}
+}
 
-  .header__contacts{display: flex;
-  gap: 50px;}
+  .header__contacts{
+//     display: none;
+//   gap: 50px;
+// @media (min-width: 768px) {
+// display: flex;
+// }
+@media (max-width: 767px) {display: none;}
+@media (min-width: 768px) {margin-left: 88px;}
+@media (min-width: 1200px) {margin-left: 93px;}
+}

@@ -1,20 +1,29 @@
-@import './utils/variables';
+// base
 @import './base/base';
+
+// utils
+@import'./utils/breakpoints';
+@import './utils/variables';
 @import './utils/utils';
 @import './utils/placeholder';
+
+// layout
 @import './layout/button';
-@import './components/hero';
-@import './components/header';
-@import './components/logo';
-@import './components/_nav';
-@import './components/section';
-@import './components/container';
-@import './components/preference';
-@import './components/activity';
-@import './components/team';
 @import './layout/socials';
+
+// components
+@import './components/activity';
 @import './components/clients';
+@import './components/container';
 @import './components/footer';
-@import './components/modal';
 @import './components/form';
+@import './components/header';
+@import './components/hero';
+@import './components/logo';
+@import './components/mobile-menu';
+@import './components/modal';
+@import './components/nav';
 @import './components/portfolio';
+@import './components/preference';
+@import './components/section';
+@import './components/team';
