@@ -661,6 +661,7 @@ ul {
   line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .hero__title {
