@@ -9,12 +9,7 @@
 
     .header{border-bottom: 1px solid #ECECEC;}
 
-    .header__burger-menu{
-      padding: 0;
-      @media (min-width: 768px){
-        display: none;
-      }
-    }
+    
     .header__container{display: flex;
     justify-content: space-between;
     align-items: center;

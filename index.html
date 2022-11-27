@@ -25,8 +25,12 @@
           <a href="./index.html" class="logo link header__logo"
             ><span class="logo__web">Web</span>Studio</a
           >
-          <button class="header__burger-menu js-open-menu">
-            <svg class="header__burger-menu--icon" width="40" height="40">
+          <button
+            class="menu__button--open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg aria-label="Кнопка відкриття мобільного меню" width="40" height="40">
               <use href="./imeg/icons.svg#icon-menu_burger40px"></use>
             </svg>
           </button>
@@ -221,7 +225,6 @@
                 <img
                   src="./imeg/men1.jpg"
                   alt="один з членів команди"
-                  
                   class="imeg"
                 />
               </picture>
@@ -282,7 +285,6 @@
                 <img
                   src="./imeg/women.jpg"
                   alt="один з членів команди"
-                  
                   class="imeg"
                 />
               </picture>
@@ -343,7 +345,6 @@
                 <img
                   src="./imeg/men2.jpg"
                   alt="один з членів команди"
-                  
                   class="imeg"
                 />
               </picture>
@@ -404,7 +405,6 @@
                 <img
                   src="./imeg/men3.jpg"
                   alt="один з членів команди"
-                  
                   class="imeg"
                 />
               </picture>
@@ -488,37 +488,37 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div>
+        <div class="footer__contact">
           <a href="./index.html" class="logo link logo__cellar"
             ><span class="logo__web">Web</span>Studio</a
           >
           <address>
-            <ul class="list">
-              <li class="adress__list">
+            <ul class="list footer__list">
+              <li class="footer__item">
                 <a
                   href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="adress link"
+                  class="footer__map link"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="adress__list">
-                <a href="mailto:info@devstudio.com" class="adress__link link"
+              <li class="footer__item">
+                <a href="mailto:info@devstudio.com" class="footer__link link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="adress__list">
-                <a href="tel:+380961111111" class="adress__link link"
+              <li class="footer__item">
+                <a href="tel:+380961111111" class="footer__link link"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer__socials">
+        <div class="socials">
           <h2 class="footer-title">приєднуйтесь</h2>
-          <ul class="socials list">
+          <ul class="socials__list list">
             <li class="socials__item">
               <a href="" class="socials__link socials__link--dark"
                 ><svg class="socials__icon" width="20" height="20">
@@ -545,18 +545,18 @@
             </li>
           </ul>
         </div>
-        <div class="footer-form">
+        <div class="subscription">
           <h2 class="footer-title">Підпишіться на розсилку</h2>
-          <form class="footer__cellar" name="footer-form-contact">
-            <label class="footer__label"
+          <form class="subscription__form" name="subscription">
+            <label class="subscription__label"
               ><input
-                class="footer__input"
+                class="subscription__input"
                 type="email"
-                name="footer-form"
+                name="subscription"
                 placeholder="E-mail"
             /></label>
-            <button type="submit" class="button">
-              Підписатися<svg class="form__icon__btn" width="24" height="24">
+            <button type="submit" class="button subscription__button">
+              Підписатися<svg class="subscription__icon" width="24" height="24">
                 <use href="./imeg/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
@@ -564,58 +564,63 @@
         </div>
       </div>
     </footer>
-    <div class="mobile-menu js-menu-container" id="mobile-menu">
-      
-        <button class="mobile-menu__close-button js-close-menu">
-          <svg width="40" height="40">
-            <use href="./imeg/icons.svg#icon-close-button"></use>
-          </svg>
-        </button>
-        
-          
-            <ul class="list mobile-menu__nav">
-              <li class="mobile-menu__item">
-                <a href="./index.html" class="link mobile-menu__link"
-                  >Студія</a
-                >
-              </li>
-              <li class="mobile-menu__item">
-                <a href="./portfolio.html" class="mobile-menu__link link">Портфоліо</a>
-              </li>
-              <li class="mobile-menu__item">
-                <a href="" class="mobile-menu__link link">Контакти</a>
-              </li>
-            </ul>
-          
-        
-        <ul class="list contacts">
-          <li class="contacts__item">
-            <a href="tel:+380961111111" class="mobile-menu__link--tel link"
+    <div class="menu__container js-menu-container" id="mobile-menu">
+      <button class="menu__button--close js-close-menu">
+        <svg width="40" height="40">
+          <use href="./imeg/icons.svg#icon-close-button"></use>
+        </svg>
+      </button>
+
+      <ul class="list mobile-menu__nav">
+        <li class="mobile-menu__item">
+          <a href="./index.html" class="link mobile-menu__link">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./portfolio.html" class="mobile-menu__link link"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link link">Контакти</a>
+        </li>
+      </ul>
+
+      <div class="menu-contacts">
+        <ul class="list menu-auth__list">
+          <li class="menu-auth__item">
+            <a href="tel:+380961111111" class="menu-auth__link--tel link menu-auth__link"
               >+38 096 111 11 11
             </a>
           </li>
-          <li class="contacts__item">
+          <li class="menu-auth__item">
             <a
               href="mailto:info@devstudio.com"
-              class="mobile-menu__link--mail link"
+              class="menu-auth__link--mail link menu-auth__link"
               >info@devstudio.com</a
             >
           </li>
         </ul>
-      <ul class="list menu-social">
+        <ul class="list menu-social">
           <li>
-            <a href="" class="link menu-social__link menu-social__line">Instagram</a>
+            <a href="" class="link menu-social__link menu-social__line"
+              >Instagram</a
+            >
           </li>
           <li>
-            <a href="" class="link menu-social__link menu-social__line">Twitter</a>
+            <a href="" class="link menu-social__link menu-social__line"
+              >Twitter</a
+            >
           </li>
           <li>
-            <a href="" class="link menu-social__link menu-social__line">Facebook</a>
+            <a href="" class="link menu-social__link menu-social__line"
+              >Facebook</a
+            >
           </li>
           <li>
             <a href="" class="link menu-social__link">LinkedIn</a>
           </li>
         </ul>
+      </div>
     </div>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
